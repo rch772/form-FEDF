@@ -1,0 +1,40 @@
+<html>
+    <head>
+<meta charset="UTF-8">
+<title> Form validation with JS DOM</title>
+<link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+<form id="myform">
+    <h2>Registration form</h2>
+    <div class="form-group">
+        <label for="fullname">Full name</label>
+        <input type="text" id="fullname" required>
+        <div class="error" id="fullnameerror"> </div>
+    </div>
+
+    <div class="form-group">
+        <label for="password"> password</label>
+        <input type="password" id="password" required>
+        <div class="error" id="passworderror"></div>
+    </div>
+
+    <div class="form-group">
+        <label for="email">email</label>
+        <input type="email" id="email" required>
+        <div class="error" id="emailerror"></div>
+    </div>
+
+    <div class="form-group">
+        <label for="phn">Phone no.</label>
+        <input type="tel" id="phone" pattern="[0-9]{10}" required>
+        <div class="error" id="phnerror"></div>
+    </div>
+
+    <button type="submit" >submit</button>
+    <div class="success" id="successMessage"></div>
+</form>
+    <script src="script.js"></script>
+        </body>
+   
+    
